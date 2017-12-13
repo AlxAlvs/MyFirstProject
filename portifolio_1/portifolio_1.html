@@ -1,0 +1,148 @@
+<!DOCTYPE html>		
+<html lang="pt-br">		
+<head>		  
+<meta charset="utf-8">		  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">		  
+<meta name="viewport" content="width=device-width, initial-scale=1">		  		  
+<title>Currículo-Alex</title>
+<link rel="icon" href="../imagens/logo.png">		  		  
+<!-- Bootstrap CSS -->		  
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">		  	
+<link href="estilo.css" rel="stylesheet">
+<script src="../bootstrap/js/jquery-3.2.1.min.js"></script>		 
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+
+    $(document).ready(function(){
+    $("#btnSobre").click(function(){
+        $("#sobre").toggle();
+        $("#conhecimentos").hide();
+        $("#portifolio").hide();
+        $("#contato").hide();
+    });
+    $("#btnConhecimentos").click(function(){
+        $("#conhecimentos").toggle();
+        $("#sobre").hide();
+        $("#portifolio").hide();
+        $("#contato").hide();
+    });
+    $("#btnPortifolio").click(function(){
+        $("#portifolio").toggle();
+        $("#sobre").hide();
+        $("#contato").hide();
+        $("#conhecimentos").hide();
+    });
+    $("#btnContato").click(function(){
+        $("#contato").toggle();
+        $("#sobre").hide();
+        $("#portifolio").hide();
+        $("#conhecimentos").hide();
+    });
+    });
+</script>
+
+</head>		
+<body>	
+
+	<!--Barra de título-->
+
+	<nav class="navbar">
+	<header class="container-fluid">
+		<a href="../index.html" class="navbar-brand">
+            	<span class="img_logo">logo</span>
+        </a>
+      	<div class="nome">Alex Alves - Desenvolvedor web	
+        </div>
+        
+    </header>
+	</nav>
+	<!--fim barra de título-->
+	<!--conteúdo principal-->
+	<main>
+        <div class="navegacao">
+            <button id="btnSobre" class="buttons">Sobre</button><br>
+            <button id="btnConhecimentos" class="buttons">Conhecimentos</button><br>
+            <button id="btnPortifolio" class="buttons">Portifolio</button><br>
+            <button id="btnContato" class="buttons">Contato</button><br>
+        </div>
+        <div class="padrao" id="sobre">
+            <div class="sobr">
+            <div id="text">Alex Alves da Silva <br>
+             23 anos<br>
+             Estudante do curso de Análise e desenvolvimento de sistemas atualmente interessado em desenvolvimento e design de interfaces responsivas.
+            </div>
+            </div>
+        </div>
+
+        <div class="padrao" id="conhecimentos">
+            <div class="sobr">
+              <div class="imgs">
+              
+              <img src="../imagens/html5.png" alt="html5" data-placement="bottom" data-toggle="tooltip" title="html5" class="img-responsive linguagens">
+              
+              
+              <img src="../imagens/css3.png" alt="css3" data-placement="bottom" data-toggle="tooltip" title="css3" class="img-responsive linguagens">
+            
+            
+              <img src="../imagens/bootstrap.png" alt="bootstrap" data-placement="bottom" data-toggle="tooltip" title="bootstrap" class="img-responsive linguagens">
+            
+            
+              <img src="../imagens/js.png" alt="javascript" data-placement="bottom" data-toggle="tooltip" title="javascript" class="img-responsive linguagens">
+            
+            
+              <img src="../imagens/php.png" alt="php" data-placement="bottom" data-toggle="tooltip" title="php" class="img-responsive linguagens">
+            
+            
+              <img src="../imagens/mysql.png" alt="mysql" data-placement="bottom" data-toggle="tooltip" title="mysql" class="img-responsive linguagens">
+            
+            
+              <img src="../imagens/jquery.png" alt="jquery" data-placement="bottom" data-toggle="tooltip" title="jquery" class="img-responsive linguagens">
+            
+            </div>
+            <div id="idiomas">Idiomas: Inglês intermediário</div>
+            </div>
+        </div>
+        <div class="padrao" id="portifolio">
+            
+              <div id="divImagem">
+                
+              <div class="port">
+                <a href="../index.html"><img src="../imagens/portifolio.png" alt="portifolio_1" data-placement="bottom" data-toggle="tooltip" title="potifolio 1" class="img-responsive port"></a>
+              </div>
+              <div class="port">
+                <a href="portifolio_1.html"><img src="../imagens/portifolio_2.png" id="img2" alt="portifolio_2" data-placement="bottom" data-toggle="tooltip" title="potifolio 2" class="img-responsive port"></a>
+              </div>
+              <div class="port">
+                <a href="#"><img src="../imagens/portifolio_3.png" alt="portifolio_3" data-placement="bottom" data-toggle="tooltip" title="potifolio 3" class="img-responsive port"></a>
+              </div>
+  
+              
+            </div>
+        </div>
+        <div class="padrao" id="contato">
+            <div class="sobr">
+            <div id="email">
+              E-mail: AlxAlvsContato@gmail.com
+            </div>
+             <div class="social"><a  href="https://www.linkedin.com/in/alex-alves-da-silva-694222155/"><img src="../imagens/linkedin.png" data-placement="bottom" data-toggle="tooltip" title="linkedin" alt="linkedin" class="img-responsive social"></a>
+             </div>
+            </div>
+        </div>
+	</main>
+	<!--fim conteúdo principal-->
+	<!--rodapé-->
+	<footer>
+      	
+          <span text-align="right" id="contato">Alex Alves (2017)</span>
+
+      
+    </footer>
+	<!--fim rodapé-->
+  		  
+  	
+</body>		
+</html>

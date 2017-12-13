@@ -1,0 +1,189 @@
+<!DOCTYPE html>		
+<html lang="pt-br">		
+<head>		  
+<meta charset="utf-8">		  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">		  
+<meta name="viewport" content="width=device-width, initial-scale=1">		  		  
+<title>Currículo-Alex</title>
+<link rel="icon" href="imagens/logo.png">		  		  
+<!-- Bootstrap CSS -->		  
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">		  	
+<link href="estilo.css" rel="stylesheet">
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>		 
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+	$(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+	
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	
+	function adiciona_slide(n) {
+  	showSlides(slideIndex += n);
+    }
+  	
+	function slide_atual(n) {
+	showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("slide");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1} 
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none"; 
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace("active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block"; 
+	  dots[slideIndex-1].className += " active";
+	}
+
+</script>
+</head>		
+<body>	
+
+	<!--Barra de Navegação-->
+
+	<nav class="navbar navbar-default navbar-fixed-top ">
+	<header class="container-fluid">
+		<a href="index.html" class="navbar-brand">
+            	<span class="img_logo">logo</span>
+        </a>	  
+		
+		<div class="navbar-header ">
+      	<span id="nome_topo">Alex Alves - Desenvolvedor web</span>
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacao" aria-expanded="false">
+       			<span class="sr-only">Alternar Navegação</span>
+        		<span class="icon-bar"></span>
+       			<span class="icon-bar"></span>
+       			<span class="icon-bar"></span>
+     		</button>
+
+    	</div>
+    	
+	
+		<div class="collapse navbar-collapse " id="navegacao">
+
+
+      		<ul  class="nav navbar-nav navbar-right">
+        		<li><a href="#sobre"><div class="transicao">Sobre</div></a></li>
+        		<li><a href="#conhecimentos"><div class="transicao">Conhecimentos</div></a></li>
+        		<li><a href="#portifolio"><div class="transicao">Portifolio</div></a></li>
+        		<li><a href="#contato"><div class="transicao">Contato</div></a></li>
+        	</ul>
+        </div>
+        
+    </header>
+	</nav>
+
+	<!--fim Barra de Navegação-->
+	<!--conteúdo principal-->
+
+	<main class="container">
+
+		
+		<!--seção sobre-->
+		
+		<div id="sobre" class="padrao">
+			<div class="row">
+        	<div class="col-md-12 texto">
+         	 Alex Alves da Silva <br>
+         	 23 anos<br>
+         	 Estudante do curso de <span id="ads" data-toggle="tooltip" data-placement="bottom" title="Pela faculdade: Fatec de taquaritinga">Análise e desenvolvimento de sistemas</span><br>
+         	 Atualmente interessado em desenvolvimento e design de interfaces responsivas.
+         	</div>
+        	</div>
+    	</div>
+    	
+
+    <!--fim seção sobre-->
+
+     <!--seção conhecimentos-->
+
+    	<div id="conhecimentos" class="col-md-12 padrao">
+			
+        	
+         	 <div class="padrao">Conhecimentos em:</div><br>
+         	 <div class="row-fluid col-md-12 ">
+         	 	<div class="col-md-2 col-xs-3 col-md-offset-1">
+
+         	 		<img src="imagens/html5.png" alt="html5" data-placement="bottom" data-toggle="tooltip" title="html5" class="img-responsive linguagens">
+         	    </div>
+         	    <div class="col-md-2 col-xs-3">
+         	 		<img src="imagens/css3.png" alt="css3" data-placement="bottom" data-toggle="tooltip" title="css3" class="img-responsive linguagens">
+         	 	</div>
+         	 	<div class="col-md-2 col-xs-3">
+         	 		<img src="imagens/bootstrap.png" alt="bootstrap" data-placement="bottom" data-toggle="tooltip" title="bootstrap" class="img-responsive linguagens">
+         	 	</div>
+         	 	<div class="col-md-2 col-xs-3 ">
+         	 		<img src="imagens/js.png" alt="javascript" data-placement="bottom" data-toggle="tooltip" title="javascript" class="img-responsive linguagens">
+         	 	</div>
+         	 	<div class="col-md-2 col-xs-3">
+         	 		<img src="imagens/php.png" alt="php" data-placement="bottom" data-toggle="tooltip" title="php" class="img-responsive linguagens">
+         	 	</div>
+         	 	<div class="col-md-2 col-xs-3 col-md-offset-4">
+         	 		<img src="imagens/mysql.png" alt="mysql" data-placement="bottom" data-toggle="tooltip" title="mysql" class="img-responsive linguagens">
+         	 	</div>
+                <div class="col-md-2 col-xs-3">
+                    <img src="imagens/jquery.png" alt="jquery" data-placement="bottom" data-toggle="tooltip" title="jquery" class="img-responsive linguagens">
+                </div>
+         	 
+        	</div>
+
+    	</div>
+    	<div id="idiomas" class="col-md-12 padrao">
+
+        	<p>Idiomas:<br>
+        	Português brasileiro: Nativo<br>
+        	Inglês: Intermediário <span data-placement="bottom" data-toggle="tooltip" title="Teste de Proficiência" >(TOEFL ITP: 487 pontos)</span></p>
+
+        </div>
+
+    	<!--fim seção conhecimentos-->
+    	<!--seção portifólio-->
+
+    	<div id="portifolio" class="col-md-12 padrao">
+
+    		<span id="port">Portifolio:</span><br><br>
+			<div class="imagem_link">
+         	<a  href="portifolio_1/portifolio_1.html"><img src="imagens/portifolio_2.png" alt="portifólio_1" class="img-responsive slide animacao"></a>
+         	<a  href="#sobre"><img src="imagens/portifolio.png" alt="portifólio_2" class="img-responsive slide nao_mostra animacao"></a>
+         	<a  href="#sobre"><img src="imagens/portifolio_3.png" alt="portifólio_3" class="img-responsive slide nao_mostra animacao"></a>
+         	<button class="prev" onclick="adiciona_slide(-1)">&#10094;</button>
+ 			<button class="next" onclick="adiciona_slide(1)">&#10095;</button>
+ 			<div style="text-align:center">
+ 			<div id="dot1" class="dot active" onclick="slide_atual(1)"></div> 
+ 			<div id="dot2" class="dot " onclick="slide_atual(2)"></div> 
+  			<div id="dot3" class="dot " onclick="slide_atual(3)"></div>
+ 			</div>
+ 			</div>
+    	</div>
+    	
+    	<!--fim seção portifólio-->
+	
+	</main>
+	<!--fim conteúdo principal-->
+	<!--rodapé-->
+	<footer>
+      	<div class="container">
+        <div class="row-fluid">
+          
+        <div class="col-md-12 rodape">
+          <div id="contato">Contato:</div><br>
+          E-mail: AlxAlvsContato@gmail.com
+          <div class="social"><a  href="https://www.linkedin.com/in/alex-alves-da-silva-694222155/"><img src="imagens/linkedin.png" data-placement="bottom" data-toggle="tooltip" title="linkedin" alt="linkedin" class="img-responsive social"></a>
+          </div>
+
+        </div>
+    	</div>
+    	</div>
+    </footer>
+	<!--fim rodapé-->
+  	
+</body>		
+</html>
