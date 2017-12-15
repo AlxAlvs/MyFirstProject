@@ -57,7 +57,7 @@ div.transicao:hover{
 /*conteudo principal*/
 body{
 	height: 100%;
-	background: url('imagens/capa.jpg');
+	background: url('imagens/capa.jpg')no-repeat;
 	background-attachment: fixed;		
 	font-family: Helvetica, Arial,sans-serif;
 	overflow-x: hidden;
