@@ -35,7 +35,6 @@ body{
 }
 main{
 	width: 100%;
-	height: contain;
 	font-family: Helvetica, Arial,sans-serif;
 }
 div.navegacao{
@@ -138,7 +137,6 @@ div#contato{
 }
 div#divImagem{
 	width: 90%;
-	height: contain;
 	margin-left: 21.5%;
 }
 img.port{
@@ -169,7 +167,7 @@ footer{
 	width: 100%;
 	color:white;	
 }
-span#contato{
+span.contato{
 	text-align: right;
 	font-weight: bold;
 	width: 100%;
@@ -218,7 +216,6 @@ img.social{
 	}
 	div#divImagem{
 	width: 90%;
-	height: contain;
 	margin-left: 5%;
 	}
 	img.port{

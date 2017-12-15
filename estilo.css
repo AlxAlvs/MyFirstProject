@@ -217,16 +217,15 @@ img.social{
 	display: inline;
 	margin-right: 2px;
 	margin-top: 2px;
-	float: right;
+	float: center;
 	border-radius:30%;
 }
 div.social{
-	width:100%%;
+	width:100%;
 	height: 60px;
 	display: block;
 }
-/*fim rodapé*/
-
+/*fim rodape*/
 /*media queries*/
 
 @media screen and (max-width: 768px){
@@ -255,5 +254,6 @@ div.social{
 	img.social{
 	width: 10%;
 	height: 60%;
+	}
 }
 /*fim media queries*/
