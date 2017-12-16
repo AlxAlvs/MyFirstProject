@@ -234,6 +234,12 @@ img.social{
 	width: 10%;
 	height: 60%;
 	}
+	div#text{
+	font-size: 15px;
+	}
+	div#email{
+	font-size: 15px;
+	}
 
 }
 @media screen and (min-width: 768px){
