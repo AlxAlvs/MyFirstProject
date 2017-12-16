@@ -22,8 +22,8 @@ header.container-fluid{
 }
 /*tratamento de imagens, animações e transições da barra de navegação*/
 .img_logo {
-	height: 8vh;
-	width: 5vh;
+	height: 50px;
+	width: 80px;
 	display: block;
 	background: url('imagens/logo.png') no-repeat;
 	background-size: contain;
@@ -56,6 +56,8 @@ div.transicao:hover{
 
 /*conteudo principal*/
 body{
+	width:100%;
+	height: 1370px;
 	background: url('imagens/capa.jpg')no-repeat;
 	background-attachment: fixed;		
 	font-family: Helvetica, Arial,sans-serif;
@@ -164,16 +166,16 @@ span#port{
 }
 /*tratamento de imagens e animações do conteúdo principal*/
 img.linguagens{
-	width: 7vw;
-	height: 12vh;
+	width: 200px;
+	height: 150px;
 	background-color: white;
 	padding-bottom: 5px;
 	padding-left: 15px;
 	margin-bottom: 2px;
 }
 img.animacao{
-	width: 100%;
-	height: 60vh;
+	width: 1500px;
+	height: 500px;
 	border-radius: 10px;
 	animation-name: animacao;
   	animation-duration: 1.7s;
@@ -211,8 +213,8 @@ div#contato{
 	display: inline-block;
 }
 img.social{
-	width: 4%;
-	height: 60%;
+	width: 30px;
+	height: 30px;
 	display: inline;
 	margin-right: 2px;
 	margin-top: 2px;
@@ -229,15 +231,15 @@ div.social{
 
 @media screen and (max-width: 768px){
 	div.padrao{
-		font-size: 1.7rem;
+	font-size: 1.7rem;
 	}
 	span.img_logo{
-		display:none;
+	display:none;
 	}
 	div.transicao{
-		width: 50%;
-		margin-left: 25%;
-		margin-right: 25%;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
 	}
 	img.linguagens{
 	width: 15vw;
@@ -250,9 +252,9 @@ div.social{
 	div.texto{
 	margin-top: 100px;
 	}
-	img.social{
-	width: 10%;
-	height: 60%;
+	span#nome_topo{
+	padding-bottom: 20px;
+	padding-right: 10px;
 	}
 }
 /*fim media queries*/

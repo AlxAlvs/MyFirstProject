@@ -1,7 +1,7 @@
 /*barra de titulo*/
 .img_logo {
-	height: 8vh;
-	width: 5vh;
+	height: 50px;
+	width: 80px;
 	display: block;
 	background: url('../imagens/logo.png') no-repeat;
 	background-size: contain;
@@ -13,7 +13,7 @@ nav.navbar{
 	padding-bottom: 15px; 
 	background-image: url("imagens/madeira_textura1.png"),linear-gradient(180deg,white,black);
 	width: 100%;
-	height: 10vh;
+	height:100px;
 	text-align: center;
 	border-radius: 0%;
 	box-shadow: 0px 5px 5px;
@@ -136,13 +136,13 @@ div#contato{
 	width: 80%;
 }
 div#divImagem{
-	width: 90%;
-	margin-left: 21.5%;
+	width: 1500px;
+	margin-left: 15%;
 }
 img.port{
-	width: 20%;
-	height:20vh;
-	margin-left: 0.5%;
+	width: 300px;
+	height:200px;
+	margin-left: 10px;
 	float:left;
 	box-shadow: 2px 2px 2px 2px black;
 	margin-top: 1%;
@@ -174,8 +174,8 @@ span.contato{
 	display: inline-block;
 }
 img.social{
-	width: 4%;
-	height: 60%;
+	width: 30px;
+	height: 30px;
 	display: inline;
 	margin-right: 2px;
 	margin-top: 2px;
