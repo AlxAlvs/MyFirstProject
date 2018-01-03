@@ -12,39 +12,6 @@
 <script src="bootstrap/js/jquery-3.2.1.min.js"></script>		 
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script>
-	$(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    })
-
-	var slideIndex = 1;
-	showSlides(slideIndex);
-
-	
-	function adiciona_slide(n) {
-  	showSlides(slideIndex += n);
-    }
-  	
-	function slide_atual(n) {
-	showSlides(slideIndex = n);
-    }
-    function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("slide");
-	  var dots = document.getElementsByClassName("dot");
-	  if (n > slides.length) {slideIndex = 1} 
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-	      slides[i].style.display = "none"; 
-	  }
-	  for (i = 0; i < dots.length; i++) {
-	      dots[i].className = dots[i].className.replace("active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block"; 
-	  dots[slideIndex-1].className += " active";
-	}
-
-</script>
-<script>
 	$(document).ready(function(){
     $("#btnNavegacao").click(function(){
         $("#navegacao").toggle();
@@ -56,9 +23,7 @@
 
 	<nav class="navbar navbar-default navbar-fixed-top ">
 	<header class="container-fluid">
-		<a href="index.html" class="navbar-brand">
-            	<span class="img_logo">logo</span>
-        </a>	  
+			  
 		
 		<div class="navbar-header ">
       	<span id="nome_topo">Alex Alves - Desenvolvedor web</span>
@@ -189,6 +154,39 @@
     	</div>
     </footer>
 	<!--fim rodapé-->
+  
+<script>
+	$(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	
+	function adiciona_slide(n) {
+  	showSlides(slideIndex += n);
+    }
   	
+	function slide_atual(n) {
+	showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("slide");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1} 
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none"; 
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace("active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block"; 
+	  dots[slideIndex-1].className += " active";
+	}
+
+</script>
 </body>		
 </html>

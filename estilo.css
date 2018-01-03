@@ -21,17 +21,7 @@ header.container-fluid{
 	color:white;
 }
 /*tratamento de imagens, animações e transições da barra de navegação*/
-.img_logo {
-	height: 50px;
-	width: 80px;
-	display: block;
-	background: url('imagens/logo.png') no-repeat;
-	background-size: contain;
-	color: transparent;
-}
-.navbar-brand{
-	padding-top: 5px;
-}
+
 div.transicao{
 	border-radius: 5px;
 	text-align: center;
