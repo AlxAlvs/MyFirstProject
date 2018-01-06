@@ -137,7 +137,7 @@ div#contato{
 }
 div#divImagem{
 	width: 1500px;
-	margin-left: 15%;
+	margin-left: 20%;
 }
 img.port{
 	width: 300px;
@@ -251,6 +251,7 @@ img.social{
 	div#divImagem{
 	width: 90%;
 	margin-left: 5%;
+	margin-right: 5%;
 	}
 	img.port{
 	width: 60%;
@@ -298,6 +299,11 @@ img.social{
 	width: 90%;
 	margin-left: 5%;
 	}
+	div#divImagem{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	}
 }
 @media screen and (min-width: 992px){
 	div.navegacao{
@@ -327,6 +333,11 @@ img.social{
 	margin-left: 1%;
 	float: left;
 	}
+	div#divImagem{
+	width: 80%;
+	margin-left: 20%;
+	}
+
 
 }
 @media screen and (min-width: 1200px){
@@ -335,6 +346,7 @@ img.social{
 	margin-bottom: 2%;
 	width: 250px;
 	}
+
 
 }
 /*fim media queries*/
