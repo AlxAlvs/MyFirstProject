@@ -1,0 +1,92 @@
+<!DOCTYPE html>   
+<html lang="pt-br">   
+<head>      
+<meta charset="utf-8">               
+<title>Currículo-Alex</title>
+<link rel="icon" href="../imagens/logo.png">                    
+<link href="estilo.css" rel="stylesheet">
+<script src="../bootstrap/js/jquery-3.2.1.min.js"></script>    
+
+
+<script>
+var prim = null;
+var segu = null;
+
+$(document).ready(function(){
+ 
+
+     $("#loading").css("display", "none");
+     $("#conteudo").css("display", "block");
+
+    prim = $(window).scrollTop();
+    $(window).scroll(function () {
+        segu = $(window).scrollTop();
+        if (prim < segu) {
+        $("#imagemDiv").animate({
+          opacity:'0.8',
+          opacity:'0.5',
+          opacity:'0.1',
+          height:'hide'
+        });
+        prim = $(window).scrollTop();
+        $("#imagemDiv2").fadeIn("slow");
+        $("#imagemDiv2").css("display", "block");
+        $("#scrollUp").css("display", "block");
+        $("#scroll").css("display", "none");
+        } else {
+        $("#imagemDiv").animate({
+          opacity:'1',
+          height:'show'
+        });
+        prim = $(window).scrollTop();
+        $("#imagemDiv2").fadeOut("slow");
+        $("#imagemDiv2").css("display", "none");
+        $("#scrollUp").css("display", "none");
+        $("#scroll").css("display", "block");
+        }
+    });
+});
+
+</script>
+</head>     
+<body>
+    <div id="loading">
+    <div id="load1" class="load"></div>
+    <div id="load2" class="load"></div>
+    <div id="load3" class="load"></div>
+    </div>
+
+    <!--Barra de título-->
+    <div id="conteudo">
+    <nav>
+    <header>
+      <h1>
+       Alex - Desenvolvedor web
+      </h1>
+    </header>
+    <div class="nav">
+      <h4>Página dedicada à ilustrar conhecimentos<br> no desenvolvimento web sobre<br> animações css e jquery.</h4>
+    </div>
+    <div class="nav" id="scroll">Scroll down</div>
+    <div class="nav" id="scrollUp">Scroll up</div>
+    </nav>
+    <!--fim barra de título-->
+    <!--conteúdo principal-->
+    <main>
+      <div id="imagemDiv" >
+        <a  href="../index.html"><img src="imagens/portifolio.png" alt="portifolio1" class="imgs "></a>
+      </div>
+      <div id="imagemDiv2" class="imagemDiv2" >
+        <a  href="../portifolio_1/portifolio_1.html"><img src="imagens/portifolio2.png" alt="portifolio2" class="img2" ></a>
+      </div>
+    </main>
+    </div>
+    <!--fim conteúdo principal-->
+    <!--rodapé-->
+    <footer>
+    </footer>
+    <!--fim rodapé-->
+          
+    
+</body>     
+</html>

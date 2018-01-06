@@ -4,23 +4,57 @@
 <meta charset="utf-8">		  
 <meta http-equiv="X-UA-Compatible" content="IE=edge">		  
 <meta name="viewport" content="width=device-width, initial-scale=1">		  		  
-<title>Currículo-Alex</title>
-<link rel="icon" href="imagens/logo.png">		  		  
+<title>Currículo-Alex</title>		  		  
 <!-- Bootstrap CSS -->		  
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">		  	
 <link href="estilo.css" rel="stylesheet">
 <script src="bootstrap/js/jquery-3.2.1.min.js"></script>		 
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script>
-	$(document).ready(function(){
-    $("#btnNavegacao").click(function(){
-        $("#navegacao").toggle();
-    }});</script>
+    $(function () {
+      $("#loading").css("display", "none");
+     $("#conteudo").css("display", "block");
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    
+    function adiciona_slide(n) {
+    showSlides(slideIndex += n);
+    }
+    
+    function slide_atual(n) {
+    showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slide");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1} 
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace("active", "");
+      }
+      slides[slideIndex-1].style.display = "block"; 
+      dots[slideIndex-1].className += " active";
+    }
+
+</script>
 </head>		
-<body>	
+<body>
+  <div id="loading">
+    <div id="load1" class="load"></div>
+    <div id="load2" class="load"></div>
+    <div id="load3" class="load"></div>
+  </div>
 
 	<!--Barra de Navegação-->
-
+<div id="conteudo">
 	<nav class="navbar navbar-default navbar-fixed-top ">
 	<header class="container-fluid">
 			  
@@ -122,14 +156,14 @@
     		<span id="port">Portfólio:</span><br><br>
 			<div class="imagem_link">
          	<a  href="portifolio_1/portifolio_1.html"><img src="imagens/portifolio_2.png" alt="portifólio_1" class="img-responsive slide animacao"></a>
-         	<a  href="#sobre"><img src="imagens/portifolio.png" alt="portifólio_2" class="img-responsive slide nao_mostra animacao"></a>
-         	<a  href="#sobre"><img src="imagens/portifolio_3.png" alt="portifólio_3" class="img-responsive slide nao_mostra animacao"></a>
+         	<a  href="portifolio_2/portifolio_2.html"><img src="imagens/portifolio_3.png" alt="portifólio_3" class="img-responsive slide nao_mostra animacao"></a>
+          <a  href="#sobre"><img src="imagens/portifolio.png" alt="portifólio_2" class="img-responsive slide nao_mostra animacao"></a>
          	<button class="prev" onclick="adiciona_slide(-1)">&#10094;</button>
  			<button class="next" onclick="adiciona_slide(1)">&#10095;</button>
  			<div style="text-align:center">
  			<div id="dot1" class="dot active" onclick="slide_atual(1)"></div> 
  			<div id="dot2" class="dot " onclick="slide_atual(2)"></div> 
-  			<div id="dot3" class="dot " onclick="slide_atual(3)"></div>
+  		<div id="dot3" class="dot " onclick="slide_atual(3)"></div>
  			</div>
  			</div>
     	</div>
@@ -155,38 +189,6 @@
     </footer>
 	<!--fim rodapé-->
   
-<script>
-	$(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    })
-
-	var slideIndex = 1;
-	showSlides(slideIndex);
-
-	
-	function adiciona_slide(n) {
-  	showSlides(slideIndex += n);
-    }
-  	
-	function slide_atual(n) {
-	showSlides(slideIndex = n);
-    }
-    function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("slide");
-	  var dots = document.getElementsByClassName("dot");
-	  if (n > slides.length) {slideIndex = 1} 
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-	      slides[i].style.display = "none"; 
-	  }
-	  for (i = 0; i < dots.length; i++) {
-	      dots[i].className = dots[i].className.replace("active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block"; 
-	  dots[slideIndex-1].className += " active";
-	}
-
-</script>
+</div>
 </body>		
 </html>

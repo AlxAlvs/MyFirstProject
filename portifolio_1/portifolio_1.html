@@ -18,6 +18,8 @@
 
 
     $(document).ready(function(){
+      $("#loading").css("display", "none");
+      $("#conteudo").css("display", "block");
     $("#btnSobre").click(function(){
         $("#sobre").toggle();
         $("#conhecimentos").hide();
@@ -46,10 +48,15 @@
 </script>
 
 </head>		
-<body>	
+<body>
+    <div id="loading">
+    <div id="load1" class="load"></div>
+    <div id="load2" class="load"></div>
+    <div id="load3" class="load"></div>
+    </div>
 
 	<!--Barra de título-->
-
+<div id="conteudo">
 	<nav class="navbar">
 	<header class="container-fluid">
 		<a href="../index.html" class="navbar-brand">
@@ -71,9 +78,8 @@
         </div>
         <div class="padrao" id="sobre">
             <div class="sobr">
-            <div id="text">Alex Alves da Silva <br>
-             23 anos<br>
-             Estudante do curso de Análise e desenvolvimento de sistemas. Esta página tem o objetivo de ilustrar conhecimentos no desenvolvimento e design de interfaces responsivas.
+            <div id="text">
+                          Esta página tem o objetivo de ilustrar conhecimentos bootstrap e javascript utilizando um layout diferente.
             </div>
             </div>
         </div>
@@ -117,7 +123,7 @@
                 <a href="portifolio_1.html"><img src="imagens/portifolio_2.png"  alt="portifolio_2" data-placement="bottom" data-toggle="tooltip" title="potfólio 2" class="img-responsive port"></a>
               </div>
               <div class="port">
-                <a href="#"><img src="imagens/portifolio_3.png" alt="portifolio_3" data-placement="bottom" data-toggle="tooltip" title="potfólio 3" class="img-responsive port"></a>
+                <a href="../portifolio_2/portifolio_2.html"><img src="imagens/portifolio_3.png" alt="portifolio_3" data-placement="bottom" data-toggle="tooltip" title="potfólio 3" class="img-responsive port"></a>
               </div>
   
               
@@ -133,14 +139,11 @@
             </div>
         </div>
 	</main>
+</div>
 	<!--fim conteúdo principal-->
 	<!--rodapé-->
-	<footer>
-      	
-          <span class="contato">Alex Alves (2017)</span>
-
-      
-    </footer>
+	<footer>      
+  </footer>
 	<!--fim rodapé-->
   		  
   	

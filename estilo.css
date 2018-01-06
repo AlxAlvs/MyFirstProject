@@ -184,6 +184,40 @@ div.imagem_link{
   to {opacity: 1}
 }
 /*fim tratamento de imagens e animações do conteúdo principal*/
+/* animação loading */
+.load{
+	background-color: none;
+	width: 20px;
+	height: 20px;
+	margin-left: 50%;
+	animation-name: color;
+    animation-iteration-count: 10;
+    float: center;
+}
+#load1{
+	margin-top: 20%;
+	animation-duration: 1s;
+}
+#load2{
+	margin-top: 5px;
+	animation-duration: 1.25s;
+}
+#load3{
+	margin-top: 5px;
+	animation-duration: 1.5s;
+}
+div#conteudo{
+	display: none;
+}
+div#loading{
+	display: block;
+}
+@keyframes color {
+    0%  {background-color:#0033cc;}
+    50%  {background-color:lightblue;}
+    100% {background-color:#001a66;}
+}
+/*fim animação loading */
 
 /*fim conteudo principal*/
 

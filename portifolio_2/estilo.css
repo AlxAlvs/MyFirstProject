@@ -1,0 +1,141 @@
+
+header{
+	background-color: white;
+	position: relative;
+}
+h1{
+	text-align: right;
+	transform: skew(-15deg);
+	display: block;
+	padding: 10px 15px 10px 10px;
+}
+nav{
+	position: relative;
+	z-index: 2;
+	background:rgba(0,0,0,0.8);
+	width: 40%;
+	height: 102vh;
+	transform: skew(15deg);
+	margin-left: -150px;
+	margin-top: -20px;
+	float: left;
+}
+body{
+	background-color: lightgray;
+
+}
+.nav{
+	transform: skew(-15deg);
+	color: white;
+	text-align: right;
+	margin-right: 30px;
+	position: relative;
+	z-index: 3;
+}
+div#scroll{
+	margin-top: 800px;
+}
+div#scrollUp{
+	margin-top: 800px;
+	display: none;
+}
+.imgs{
+	width: 1000px;
+	height: 500px;
+	float: right;
+	position: absolute;
+	margin-right: 400px;
+	margin-top: 200px;
+	box-shadow: 2px 3px 5px 2px black;
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+.imgs:hover{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+.img2:hover{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+#imagemDiv2{
+	display: none;
+}
+.img2{
+	width: 1000px;
+	height: 500px;
+	float: right;
+	position: absolute;
+	margin-left:60px;
+	margin-top: 400px;
+	box-shadow: 2px 3px 5px 2px black;
+}
+/* animação loading */
+.load{
+	background-color: none;
+	width: 20px;
+	height: 20px;
+	margin-left: 50%;
+	animation-name: color;
+    animation-iteration-count: 10;
+    float: center;
+}
+#load1{
+	margin-top: 20%;
+	animation-duration: 1s;
+}
+#load2{
+	margin-top: 5px;
+	animation-duration: 1.25s;
+}
+#load3{
+	margin-top: 5px;
+	animation-duration: 1.5s;
+}
+#conteudo{
+	display: none;
+}
+#loading{
+	display: block;
+}
+@keyframes color {
+    0%  {background-color:#0033cc;}
+    50%  {background-color:lightblue;}
+    100% {background-color:#001a66;}
+}
+/*fim animação loading */
