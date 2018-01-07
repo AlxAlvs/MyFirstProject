@@ -34,13 +34,6 @@ body{
 	position: relative;
 	z-index: 3;
 }
-div#scroll{
-	margin-top: 800px;
-}
-div#scrollUp{
-	margin-top: 800px;
-	display: none;
-}
 .imgs{
 	width: 1000px;
 	height: 500px;
@@ -61,6 +54,7 @@ div#scrollUp{
 	transform: skew(-15deg);
 	width: 10%;
 	display: inline-block;
+	margin-bottom: 5px;
 }
 #button:hover{
 	background-color: white;
@@ -158,13 +152,6 @@ span{
 	margin-left: 20px;
 	transform: skew(0deg);
 	}
-	div#scroll{
-	margin-top: 80%;
-	}
-	div#scrollUp{
-	margin-top: 80%;
-	display: none;
-	}
 	.imgs{
 	width: 100%;
 	height: 50%;
@@ -180,13 +167,6 @@ span{
 	height: 100%;
 	margin-bottom: 0px;
 	margin-left: 20px;
-	}
-	div#scroll{
-	margin-top: 80%;
-	}
-	div#scrollUp{
-	margin-top: 80%;
-	display: none;
 	}
 	.imgs{
 	width: 50%;
@@ -206,13 +186,6 @@ span{
 	.imgs{
 	width: 50%;
 	height: 50%;
-	}
-	div#scroll{
-	margin-top: 80%;
-	}
-	div#scrollUp{
-	margin-top: 80%;
-	display: none;
 	}
 }
 @media screen and (min-width: 1200px){
