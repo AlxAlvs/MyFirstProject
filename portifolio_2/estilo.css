@@ -33,7 +33,6 @@ body{
 	margin-right: 30px;
 	position: relative;
 	z-index: 3;
-	top:-20px;
 }
 div#scroll{
 	margin-top: 800px;
@@ -58,10 +57,9 @@ div#scrollUp{
 	padding: 10px 10px 10px 10px ;
 	margin-left:84%;
 	margin-right: 3%;
-	margin-top: 5px;
+	margin-top: 10px;
 	transform: skew(-15deg);
 	width: 10%;
-	float:right;
 }
 #button:hover{
 	background-color: white;
