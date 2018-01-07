@@ -16,11 +16,33 @@ var segu = null;
 
      $("#loading").css("display", "none");
      $("#conteudo").css("display", "block");
+     
+     $(function(){
+    $('#button').click(function(){
+      var iteration=$(this).data('iteration')||1
+      switch ( iteration) {
+        case 1:
+          $("#imagemDiv").css("display", "none");
+          $("#imagemDiv2").fadeIn("slow");
+          $("#imagemDiv2").css("display", "block");
+          break;
+        
+        case 2:
+          $("#imagemDiv2").css("display", "none");
+          $("#imagemDiv").fadeIn("slow");
+          $("#imagemDiv").css("display", "block");
+          break;
+      }
+      iteration++;
+      if (iteration>2) iteration=1
+      $(this).data('iteration',iteration)
+    })
+  })
 
     prim = $(window).scrollTop();
-    $(window).scroll(function () {
+    $(window).scroll (function () {
         segu = $(window).scrollTop();
-        if (prim < segu) {
+        if (prim < segu ){
         $("#imagemDiv").animate({
           opacity:'0.8',
           opacity:'0.5',
@@ -68,6 +90,7 @@ var segu = null;
     </div>
     <div class="nav" id="scroll">Scroll down</div>
     <div class="nav" id="scrollUp">Scroll up</div>
+    <div id="button"><span>&#10148;</span></div>
     </nav>
     <!--fim barra de título-->
     <!--conteúdo principal-->
@@ -76,7 +99,7 @@ var segu = null;
         <a  href="../index.html"><img src="imagens/portifolio.png" alt="portifolio1" class="imgs "></a>
       </div>
       <div id="imagemDiv2" class="imagemDiv2" >
-        <a  href="../portifolio_1/portifolio_1.html"><img src="imagens/portifolio2.png" alt="portifolio2" class="img2" ></a>
+        <a  href="../portifolio_1/portifolio_1.html"><img src="imagens/portifolio2.png" alt="portifolio2" class="imgs" ></a>
       </div>
     </main>
     </div>
