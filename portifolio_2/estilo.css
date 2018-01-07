@@ -22,7 +22,6 @@ nav{
 }
 body{
 	background-color: lightgray;
-
 }
 .nav{
 	transform: skew(-15deg);
@@ -48,6 +47,7 @@ div#scrollUp{
 	margin-top: 200px;
 	box-shadow: 2px 3px 5px 2px black;
 }
+/* animação de imagens */
 @keyframes swing
 {
     15%
@@ -93,6 +93,7 @@ div#scrollUp{
         -webkit-animation-iteration-count: 1;
         animation-iteration-count: 1;
 }
+/*fim animação de imagens */
 #imagemDiv2{
 	display: none;
 }
@@ -139,3 +140,102 @@ div#scrollUp{
     100% {background-color:#001a66;}
 }
 /*fim animação loading */
+/*media queries*/
+@media screen and (max-width: 767px){
+	h1{
+		font-size: 8px;
+	}
+	nav{
+	width: 50%;
+	height: 103vh;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	transform: skew(0deg);
+	}
+	div#scroll{
+	margin-top: 80%;
+	}
+	div#scrollUp{
+	margin-top: 80%;
+	display: none;
+	}
+	.imgs{
+	width: 100%;
+	height: 50%;
+	margin-left: 20px;
+	}
+	.img2{
+	width: 100%;
+	height: 50%;
+	margin-left: 20px;
+	}
+}
+@media screen and (min-width: 768px){
+	h1{
+		font-size: 15px;
+	}
+	nav{
+	width: 50%;
+	height: 103vh;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	}
+	div#scroll{
+	margin-top: 80%;
+	}
+	div#scrollUp{
+	margin-top: 80%;
+	display: none;
+	}
+	.imgs{
+	width: 50%;
+	height: 50%;
+	}
+	.img2{
+	width: 50%;
+	height: 50%;
+	}
+}
+@media screen and (min-width: 992px){
+	h1{
+		font-size: 20px;
+	}
+	nav{
+	width: 50%;
+	height: 103vh;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	}
+	.imgs{
+	width: 50%;
+	height: 50%;
+	}
+	.img2{
+	width: 50%;
+	height: 50%;
+	}
+	div#scroll{
+	margin-top: 80%;
+	}
+	div#scrollUp{
+	margin-top: 80%;
+	display: none;
+	}
+}
+@media screen and (min-width: 1200px){
+	h1{
+		font-size: 30px;
+	}
+	nav{
+	position: relative;
+	z-index: 2;
+	background:rgba(0,0,0,0.8);
+	width: 40%;
+	height: 102vh;
+	transform: skew(15deg);
+	margin-left: -30px;
+	margin-top: -20px;
+	float: left;
+	}
+}
+/*fim media queries*/
