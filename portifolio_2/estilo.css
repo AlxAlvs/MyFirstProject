@@ -23,6 +23,9 @@ nav{
 body{
 	background-color: lightgray;
 }
+::-webkit-scrollbar { 
+    display: none; 
+}
 .nav{
 	transform: skew(-15deg);
 	color: white;
