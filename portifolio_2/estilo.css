@@ -108,13 +108,11 @@ div#scrollUp{
 }
 /* animação loading */
 .load{
-	background-color: none;
 	width: 20px;
 	height: 20px;
 	margin-left: 50%;
 	animation-name: color;
     animation-iteration-count: 10;
-    float: center;
 }
 #load1{
 	margin-top: 20%;

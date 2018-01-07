@@ -156,9 +156,6 @@ div#email{
 	text-align: center;
 	display: block;
 }
-div#divImagem{
-	float: center;
-}
 /*fim conteudo principal*/
 
 /*rodapé*/
@@ -184,13 +181,11 @@ img.social{
 /*fim rodapé*/
 /* animação loading */
 .load{
-	background-color: none;
 	width: 20px;
 	height: 20px;
 	margin-left: 50%;
 	animation-name: color;
     animation-iteration-count: 10;
-    float: center;
 }
 #load1{
 	margin-top: 20%;

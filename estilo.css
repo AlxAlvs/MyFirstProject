@@ -15,7 +15,7 @@ header.container-fluid{
 	text-align: left;
 	padding-top: 20px;
 	float: left;
-	font-family:  verdana, arial, sans-serif;
+	font-family: Lora, serif;
 	font-size: 17px;
 	display: inline;
 	color:white;
@@ -50,7 +50,7 @@ body{
 	height: 1370px;
 	background: url('imagens/capa.jpg')no-repeat;
 	background-attachment: fixed;		
-	font-family: Helvetica, Arial,sans-serif;
+	font-family: Permanent Marker, serif;
 	overflow-x: hidden;
 }
 main.container{
@@ -61,9 +61,12 @@ span#ads{
 	color:#999999;
 }
 div.padrao{
-	font-family: "Times New Roman", Georgia, Serif;
+	font-family: Permanent Marker, serif;
 	font-size: 2.2rem;
 	font-weight: bold;	
+}
+div.texto{
+	font-family: Lora, serif;
 }
 div#sobre{
 	padding-top: 30%;
@@ -186,13 +189,11 @@ div.imagem_link{
 /*fim tratamento de imagens e animações do conteúdo principal*/
 /* animação loading */
 .load{
-	background-color: none;
 	width: 20px;
 	height: 20px;
 	margin-left: 50%;
 	animation-name: color;
     animation-iteration-count: 10;
-    float: center;
 }
 #load1{
 	margin-top: 20%;
@@ -229,6 +230,8 @@ footer{
 	color:white;
 	padding-top: 15px ;	
 	text-align: center;
+	font-family: Lora, serif;
+	font-size: large;
 }
 div#contato{
 	text-align: center;
@@ -242,7 +245,6 @@ img.social{
 	display: inline;
 	margin-right: 2px;
 	margin-top: 2px;
-	float: center;
 	border-radius:30%;
 }
 div.social{
