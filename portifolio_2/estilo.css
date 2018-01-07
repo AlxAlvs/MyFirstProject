@@ -60,6 +60,7 @@ div#scrollUp{
 	margin-top: 10px;
 	transform: skew(-15deg);
 	width: 10%;
+	display: inline-block;
 }
 #button:hover{
 	background-color: white;
