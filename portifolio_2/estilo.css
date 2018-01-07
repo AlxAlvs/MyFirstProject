@@ -14,7 +14,7 @@ nav{
 	z-index: 2;
 	background:rgba(0,0,0,0.8);
 	width: 40%;
-	height: 102vh;
+	height: 100%;
 	transform: skew(15deg);
 	margin-left: -150px;
 	margin-top: -20px;
