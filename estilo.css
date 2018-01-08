@@ -94,6 +94,7 @@ div#idiomas{
 	text-align:center;
 	display: inline-block;
 	width: 100%;
+	font-family: Lora, serif;
 }
 div#portifolio{
 	background:rgba(0,0,0,0.8);
@@ -193,7 +194,7 @@ div.imagem_link{
 	height: 20px;
 	margin-left: 50%;
 	animation-name: color;
-    animation-iteration-count: 10;
+    animation-iteration-count: 20;
 }
 #load1{
 	margin-top: 20%;
