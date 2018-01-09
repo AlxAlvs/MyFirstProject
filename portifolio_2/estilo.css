@@ -25,6 +25,9 @@ header{
 span{
 	margin-left:45%;
 }
+#still{
+	color: #696969;
+}
 h1{
 	text-align: right;
 	transform: skew(-15deg);
