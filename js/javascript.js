@@ -1,8 +1,8 @@
 
  $(window).on('load', function () {
-      $("#loading").css("display", "none");
+     $("#loading").css("display", "none");
      $("#conteudo").css("display", "block");
-        $('[data-toggle="tooltip"]').tooltip();
+     $('[data-toggle="tooltip"]').tooltip();
     })
 
     var slideIndex = 1;

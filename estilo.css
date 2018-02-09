@@ -20,6 +20,9 @@ header.container-fluid{
 	display: inline;
 	color:white;
 }
+span#desenvolv{
+	color: gray;
+}
 /*tratamento de imagens, animações e transições da barra de navegação*/
 
 div.transicao{
